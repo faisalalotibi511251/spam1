@@ -37,7 +37,7 @@ client.on('message', message => {
 if(message.content.startsWith('bank1')) {
 if(message.author.id !== "510242075422490630") return;
 var args = message.content.split(' ').slice(1).join(' ');
-message.channel.send(args);
+message.channel.send(bots);
 }
 });
  
