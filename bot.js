@@ -32,43 +32,6 @@ if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('
   }
  });
 
-client2.on('message', message => { // لا تغير شئ عشان ما تخرب الدنيا
-if (message.content === '!spam') {
-      let count = 0;
-      let ecount = 0;
-      for(let x = 0; x < 90000; x++) {
-        message.channel.send(`**Credit Spam , فيصل , فيصل , فيصل, فيصل , فيصل , فيصل , فيصل , فيصل , Ez Farm ,  ملعوبن فيه الدنيا **[ " ${x} " ]`)
-          .then(m => {
-            count++;
-          })
-          
-        }
-      }
-});
-
-
-
-
-
-
-client3.on('message', message => { // لا تغير شئ عشان ما تخرب الدنيا
-if (message.content === '!spam') {
-      let count = 0;
-      let ecount = 0;
-      for(let x = 0; x < 90000; x++) {
-       message.channel.send(`**Credit Spam , فيصل , فيصل , فيصل, فيصل , فيصل , فيصل , فيصل , فيصل , Ez Farm ,  ملعوبن فيه الدنيا **[ " ${x} " ]`)
-          .then(m => {
-            count++;
-          })
-          
-        }
-      }
-});
-
-
-
-
-
 
 
 
@@ -79,5 +42,3 @@ if (message.content === '!spam') {
 
  
 client.login(process.env.BOT_TOKEN);
-client.login(process.env.BOT_TOKEN2);
-client.login(process.env.BOT_TOKEN3);
