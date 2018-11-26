@@ -1,5 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const client2 = new Discord.Client();
+const client3 = new Discord.Client();
 var prefix = "1";
 
 client.on('ready', () => {
@@ -29,6 +31,51 @@ if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('
    message.delete()
   }
  });
+
+client2.on('message', message => { // لا تغير شئ عشان ما تخرب الدنيا
+if (message.content === '!spam') {
+      let count = 0;
+      let ecount = 0;
+      for(let x = 0; x < 90000; x++) {
+        message.channel.send(`**Credit Spam , فيصل , فيصل , فيصل, فيصل , فيصل , فيصل , فيصل , فيصل , Ez Farm ,  ملعوبن فيه الدنيا **[ " ${x} " ]`)
+          .then(m => {
+            count++;
+          })
+          
+        }
+      }
+});
+
+
+
+
+
+
+client3.on('message', message => { // لا تغير شئ عشان ما تخرب الدنيا
+if (message.content === '!spam') {
+      let count = 0;
+      let ecount = 0;
+      for(let x = 0; x < 90000; x++) {
+       message.channel.send(`**Credit Spam , فيصل , فيصل , فيصل, فيصل , فيصل , فيصل , فيصل , فيصل , Ez Farm ,  ملعوبن فيه الدنيا **[ " ${x} " ]`)
+          .then(m => {
+            count++;
+          })
+          
+        }
+      }
+});
+
+
+
+
+
+
+
+
+
+
+
+
 
  
 client.login(process.env.BOT_TOKEN);
