@@ -8,9 +8,9 @@ client.on('ready', () => {
 
 client.on("guildMemberAdd", member => {
         if(member.guild.id === "522068696416387087") {  // ايدي السيرفر
-  const channel = member.guild.channels.find('id', '522068696416387093'); //ايدي الروم
+  const channel = member.guild.channels.find('id', '523100282192920587'); //ايدي الروم
 if (!channel) return;
-channel.send(`**Ꮃelcome Ꭲo Ꮪerver Cálin..**`)
+channel.send(`**Ꮃelcome Ꭲo Ꮪerver Block Community..**`)
 }});
 
 
